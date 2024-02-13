@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Poppins Light'), local('Poppins-Light'), url('path/to/poppins-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url('path/to/poppins-regular.woff2') format('woff2');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: royalblue;
+}
+
+.container{
+    width: 700px;
+    margin: 100px auto;
+    border-radius: 8px;
+    background-color: rgb(232, 232, 232);
+    text-align: justify;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.search-box{
+    margin: 10px 0px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.search-bar{
+    width: 85%;
+    border: none;
+    outline: none;
+    padding: 10px 17px;
+    border: 1px solid rgba(31, 31, 31, 0.784);
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-bar:focus{
+    border: 1px solid dodgerblue;
+}
+
+.search-btn{
+    padding: 12px 24px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.search-btn:hover{
+    background-color: royalblue;
+}
+
+p{
+    line-height: 190%;
+    letter-spacing: 1.2;
+    font-size: 20px;
+}
+
+mark{
+    background-color: dodgerblue;
+    color: white;
+}
